@@ -1,7 +1,7 @@
 {
-  "name": "ss-vimo-gateway",
+  "name": "fm_api",
   "version": "1.0.0",
-  "description": "Handle connect between VIMO - SANSHIP",
+  "description": "Web services for Friend Map",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/tuanhm/sanship-handle-order.git"
+    "url": "https://github.com/HusFriendMap/fm_api"
   },
-  "author": "tuanhm",
+  "author": "LightKnight3r",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/tuanhm/sanship-handle-order/issues"
+    "url": "https://github.com/HusFriendMap/fm_api/issues"
   },
-  "homepage": "https://gitlab.com/tuanhm/sanship-handle-order#README",
+  "homepage": "https://github.com/HusFriendMap/fm_api#README",
   "dependencies": {
     "async": "^2.6.0",
     "config": "^1.30.0",
@@ -25,7 +25,6 @@
     "mongoose": "^5.0.17",
     "redis": "^2.8.0",
     "validator": "^10.0.0",
-    "vimo-gateway": "git+https://github.com/sanship2017/vimo-gateway.git",
     "winston": "^2.4.2",
     "winston-daily-rotate-file": "^3.1.3"
   }
