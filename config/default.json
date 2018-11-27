@@ -1,0 +1,21 @@
+{
+  "mongo": {
+    "connections": {
+      "master": {
+        "host": "",
+        "port": 27017,
+        "database": "",
+        "options": {
+          "user": "",
+          "pass": ""
+        }
+      }
+    }
+  },
+  "logLevel": "info",
+  "dirLog": "logs",
+  "proxyRequestServer": {
+    "google": "",
+    "pushNotify": ""
+  }
+}
