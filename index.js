@@ -19,12 +19,12 @@ const GoogleHandle = require('./lib/routes/google');
 const app = express();
 const server = require('http').Server(app);
 
-app.use(express.static('public'))
 app.use(bodyParser.json());
 
 // Routes
 
 app.post('/api/v1.0/google/search-places', GoogleHandle.placeSearch);
+app.post('/api/v1.0/google/place-detail', GoogleHandle.placeDetail);
 
 const port = _.get(config, 'port', 3000);
 server.listen(port, () => {
