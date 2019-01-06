@@ -2,18 +2,22 @@
   "mongo": {
     "connections": {
       "master": {
-        "host": "",
-        "port": 27017,
-        "database": "",
+        "host": "ds013951.mlab.com",
+        "port": 13951,
+        "database": "databasemongo",
         "options": {
-          "user": "",
-          "pass": ""
+          "user": "ducmanhchy",
+          "pass": "ducmanh1996"
         }
       }
     }
   },
   "logLevel": "info",
   "dirLog": "logs",
+  "port":1996,
+  "google": {
+    "apiKey": "AIzaSyDv7k0i13euDi8VBhsBSXy2TT-A7g0xBRg"
+  },
   "proxyRequestServer": {
     "google": "",
     "pushNotify": ""
