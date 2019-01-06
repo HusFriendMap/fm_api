@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/HusFriendMap/fm_api#README",
   "dependencies": {
+    "@google/maps": "^0.5.5",
     "async": "^2.6.0",
     "config": "^1.30.0",
     "express": "^4.16.3",

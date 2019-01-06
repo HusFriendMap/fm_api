@@ -5,10 +5,14 @@ const Logger = require('./lib/logger')
 
 // Global variables
 global.logger = Logger(`${__dirname}/logs`);
+global.googleMapsClient = require('@google/maps').createClient({
+  key: _.get(config, 'google.apiKey', '')
+});
+
 
 // Middleware
 const bodyParser = require('body-parser')
-
+const GoogleHandle = require('./lib/routes/google');
 // Handle routes
 
 // Start server, socket
@@ -19,6 +23,8 @@ app.use(express.static('public'))
 app.use(bodyParser.json());
 
 // Routes
+
+app.post('/api/v1.0/google/search-places', GoogleHandle.placeSearch);
 
 const port = _.get(config, 'port', 3000);
 server.listen(port, () => {
