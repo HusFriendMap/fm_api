@@ -13,6 +13,7 @@ global.googleMapsClient = require('@google/maps').createClient({
 // Middleware
 const bodyParser = require('body-parser')
 const GoogleHandle = require('./lib/routes/google');
+const App = require('./lib/routes/app');
 // Handle routes
 
 // Start server, socket
@@ -25,6 +26,7 @@ app.use(bodyParser.json());
 
 app.post('/api/v1.0/google/search-places', GoogleHandle.placeSearch);
 app.post('/api/v1.0/google/place-detail', GoogleHandle.placeDetail);
+app.post('/api/v1.0/app/list-available-services', App.listServiceAvailable);
 
 const port = _.get(config, 'port', 3000);
 server.listen(port, () => {
