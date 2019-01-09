@@ -21,5 +21,8 @@
   "proxyRequestServer": {
     "google": "",
     "pushNotify": ""
+  },
+  "jwt": {
+    "secret":"Tchaikovskyisacomposer"
   }
 }
