@@ -40,6 +40,7 @@ app.post('/api/v1.0/member/add-favorite-place', FavoriteHandel.addFavoritePlace)
 app.post('/api/v1.0/member/remove-favorite-place', FavoriteHandel.removeFavorite);
 app.post('/api/v1.0/member/list-favorite-place', FavoriteHandel.list);
 
+const trungdz = 2000
 const port = _.get(config, 'port', 3000);
 server.listen(port, () => {
   logger.logInfo('Server listening at port:', port)
